@@ -1,0 +1,3 @@
+[console_scripts]
+robot_teleop = mi_robot_15.robot_teleop:main
+
