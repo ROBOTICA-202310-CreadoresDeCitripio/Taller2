@@ -1,7 +1,9 @@
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/robot_interface.py
+/home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/robot_player.py
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/__init__.py
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/robot_teleop.py
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/__pycache__/robot_interface.cpython-310.pyc
+/home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/__pycache__/robot_player.cpython-310.pyc
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/__pycache__/__init__.cpython-310.pyc
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15/__pycache__/robot_teleop.cpython-310.pyc
 /home/robotica/taller2_grupo15/install/mi_robot_15/share/ament_index/resource_index/packages/mi_robot_15
@@ -14,4 +16,5 @@
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15-0.0.0-py3.10.egg-info/requires.txt
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15-0.0.0-py3.10.egg-info/top_level.txt
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/mi_robot_15/robot_interface
+/home/robotica/taller2_grupo15/install/mi_robot_15/lib/mi_robot_15/robot_player
 /home/robotica/taller2_grupo15/install/mi_robot_15/lib/mi_robot_15/robot_teleop
