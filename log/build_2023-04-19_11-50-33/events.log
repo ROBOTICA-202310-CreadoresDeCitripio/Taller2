@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000578] (-) JobUnselected: {'identifier': 'mi_robot_15'}
+[0.000759] (-) JobUnselected: {'identifier': 'services'}
+[0.000918] (-) EventReactorShutdown: {}

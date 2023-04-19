@@ -50,6 +50,16 @@ class InitialMenu():
                 f.write('linear_x, angular_z, timestamp\n')
         return file_path
 
+    def read_file(self):
+        file_path = filedialog.askopenfilename()
+
+        # Read the TXT file starting from the second line
+        with open(file_path, 'r') as f:
+            next(f)
+            for line in f:
+                print(line.strip())
+
+
     def select_draw_trajectory(self):
         # Primera opción: Dibujar la trayectoria seguida por el robot
         self.window.destroy()
@@ -83,6 +93,7 @@ class InitialMenu():
     def select_play_trajectory(self):
         # Tercera opción: Reporoducir la trayectoria seguida por el robot
         self.window.destroy()
+        file = self.read_file()
         # Inicializar la GUI específica para Reproducción de Trayectoria
         rclpy.init(args=None)
         turtle_bot_interface = TurtleBotInterface()

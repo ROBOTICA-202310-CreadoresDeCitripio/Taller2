@@ -1,0 +1,2 @@
+Invoking command in '/home/robotica/taller2_grupo15/build/services': CMAKE_PREFIX_PATH=/home/robotica/taller2_grupo15/install/mi_robot_15:/opt/ros/humble /usr/bin/cmake /home/robotica/taller2_grupo15/src/services -DCMAKE_INSTALL_PREFIX=/home/robotica/taller2_grupo15/install/services
+Invoked command in '/home/robotica/taller2_grupo15/build/services' returned '1': CMAKE_PREFIX_PATH=/home/robotica/taller2_grupo15/install/mi_robot_15:/opt/ros/humble /usr/bin/cmake /home/robotica/taller2_grupo15/src/services -DCMAKE_INSTALL_PREFIX=/home/robotica/taller2_grupo15/install/services

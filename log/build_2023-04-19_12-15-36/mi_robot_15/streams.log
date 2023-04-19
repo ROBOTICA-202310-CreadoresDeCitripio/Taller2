@@ -1,0 +1,25 @@
+[2.383s] Invoking command in '/home/robotica/taller2_grupo15/src/mi_robot_15': PYTHONPATH=/home/robotica/taller2_grupo15/build/mi_robot_15/prefix_override:/home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_robot_15 build --build-base /home/robotica/taller2_grupo15/build/mi_robot_15/build install --record /home/robotica/taller2_grupo15/build/mi_robot_15/install.log --single-version-externally-managed
+[3.211s] running egg_info
+[3.215s] writing ../../build/mi_robot_15/mi_robot_15.egg-info/PKG-INFO
+[3.221s] writing dependency_links to ../../build/mi_robot_15/mi_robot_15.egg-info/dependency_links.txt
+[3.222s] writing entry points to ../../build/mi_robot_15/mi_robot_15.egg-info/entry_points.txt
+[3.222s] writing requirements to ../../build/mi_robot_15/mi_robot_15.egg-info/requires.txt
+[3.222s] writing top-level names to ../../build/mi_robot_15/mi_robot_15.egg-info/top_level.txt
+[3.231s] reading manifest file '../../build/mi_robot_15/mi_robot_15.egg-info/SOURCES.txt'
+[3.238s] writing manifest file '../../build/mi_robot_15/mi_robot_15.egg-info/SOURCES.txt'
+[3.238s] running build
+[3.239s] running build_py
+[3.240s] running install
+[3.242s] running install_lib
+[3.246s] running install_data
+[3.249s] running install_egg_info
+[3.254s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.254s]   warnings.warn(
+[3.271s] removing '/home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15-0.0.0-py3.10.egg-info' (and everything under it)
+[3.272s] Copying ../../build/mi_robot_15/mi_robot_15.egg-info to /home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages/mi_robot_15-0.0.0-py3.10.egg-info
+[3.278s] running install_scripts
+[3.452s] Installing robot_interface script to /home/robotica/taller2_grupo15/install/mi_robot_15/lib/mi_robot_15
+[3.452s] Installing robot_player script to /home/robotica/taller2_grupo15/install/mi_robot_15/lib/mi_robot_15
+[3.452s] Installing robot_teleop script to /home/robotica/taller2_grupo15/install/mi_robot_15/lib/mi_robot_15
+[3.452s] writing list of installed files to '/home/robotica/taller2_grupo15/build/mi_robot_15/install.log'
+[3.579s] Invoked command in '/home/robotica/taller2_grupo15/src/mi_robot_15' returned '0': PYTHONPATH=/home/robotica/taller2_grupo15/build/mi_robot_15/prefix_override:/home/robotica/taller2_grupo15/install/mi_robot_15/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mi_robot_15 build --build-base /home/robotica/taller2_grupo15/build/mi_robot_15/build install --record /home/robotica/taller2_grupo15/build/mi_robot_15/install.log --single-version-externally-managed
