@@ -1,0 +1,6 @@
+{
+  "package_name": "servicios",
+  "non_idl_tuples": [
+    "/home/robotica/taller2_grupo15/src/services:srv/TrajectoryPlayer.srv"
+  ]
+}

@@ -1,0 +1,46 @@
+[0.104s] Invoking command in '/home/robotica/taller2_grupo15/build/services': CMAKE_PREFIX_PATH=/home/robotica/taller2_grupo15/install/mi_robot_15:/opt/ros/humble /usr/bin/cmake /home/robotica/taller2_grupo15/src/services -DCMAKE_INSTALL_PREFIX=/home/robotica/taller2_grupo15/install/services
+[0.160s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.726s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.740s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.758s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.796s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.848s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.205s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.873s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[1.873s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[1.873s]   services --arguments-file
+[1.873s]   /home/robotica/taller2_grupo15/build/services/rosidl_adapter__arguments__services.json
+[1.873s]   --output-dir
+[1.874s]   /home/robotica/taller2_grupo15/build/services/rosidl_adapter/services
+[1.874s]   --output-file
+[1.874s]   /home/robotica/taller2_grupo15/build/services/rosidl_adapter/services.idls)
+[1.874s]   returned error code 1:
+[1.874s] 
+[1.874s]   Traceback (most recent call last):
+[1.874s] 
+[1.874s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[1.874s]       return _run_code(code, main_globals, None,
+[1.877s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[1.877s]       exec(code, run_globals)
+[1.877s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.877s]       sys.exit(main())
+[1.878s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[1.878s]       abs_idl_file = convert_to_idl(
+[1.894s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[1.894s]       return convert_srv_to_idl(
+[1.894s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[1.894s]       srv = parse_service_string(package_name, input_file.stem, content)
+[1.894s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 850, in parse_service_string
+[1.895s]       raise InvalidServiceSpecification(
+[1.895s] 
+[1.895s]   rosidl_adapter.parser.InvalidServiceSpecification: Could not find separator
+[1.895s]   '---' between request and response
+[1.895s] 
+[1.895s] Call Stack (most recent call first):
+[1.895s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.896s]   CMakeLists.txt:11 (rosidl_generate_interfaces)
+[1.896s] 
+[1.896s] [0m
+[1.896s] -- Configuring incomplete, errors occurred!
+[1.896s] See also "/home/robotica/taller2_grupo15/build/services/CMakeFiles/CMakeOutput.log".
+[1.908s] Invoked command in '/home/robotica/taller2_grupo15/build/services' returned '1': CMAKE_PREFIX_PATH=/home/robotica/taller2_grupo15/install/mi_robot_15:/opt/ros/humble /usr/bin/cmake /home/robotica/taller2_grupo15/src/services -DCMAKE_INSTALL_PREFIX=/home/robotica/taller2_grupo15/install/services
