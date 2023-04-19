@@ -4,7 +4,10 @@ from geometry_msgs.msg import Twist
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import tkinter as tk
+from tkinter import filedialog
 import math
+from rclpy.clock import ROSClock
+import datetime
 
 class InitialMenu():
     # ==================================================================================================
@@ -35,6 +38,18 @@ class InitialMenu():
     # ==================================================================================================
     # Definir los métodos de la clase -> Event Listeners de hacer click a algún botón
     # ==================================================================================================
+    def create_file(self):
+        # Get the file name and location from the user
+        file_path = filedialog.asksaveasfilename(defaultextension='.txt')
+
+        # Check if the user has chosen a file name and location
+        if file_path:
+            # Create the file
+            with open(file_path, 'w') as f:
+                # Write a header to the file
+                f.write('linear_x, angular_z, timestamp\n')
+        return file_path
+
     def select_draw_trajectory(self):
         # Primera opción: Dibujar la trayectoria seguida por el robot
         self.window.destroy()
@@ -52,9 +67,11 @@ class InitialMenu():
     def select_save_trajectory(self):
         # Segunda opción: Guardar la trayectoria seguida por el robot
         self.window.destroy()
+        file = self.create_file()
         # Inicializar la GUI específica para Guardado de Trayectoria
         rclpy.init(args=None)
         turtle_bot_interface = TurtleBotInterface()
+        turtle_bot_interface.file_path = file
         rclpy.spin(turtle_bot_interface)
 
         # Arrancar la GUI de Tkinter
@@ -85,6 +102,7 @@ class InitialMenu():
 class TurtleBotInterface(Node):
     def __init__(self):
         super().__init__("robot_interface")
+        self.file_path = None
         self.subscription = self.create_subscription(Twist, "robot_cmdVel", self.callback, 10)
         self.subscription
 
@@ -142,6 +160,15 @@ class TurtleBotInterface(Node):
         plt.draw()
         plt.pause(0.01)
         plt.show(block=False)
+        if self.file_path is not None:
+            current_time = ROSClock().now().to_msg()
+
+            # Create a string with the data to be saved
+            data = f'{msg.linear.x}, {msg.angular.z}, {current_time.sec}.{current_time.nanosec}\n'
+
+            # Open the file in append mode and write the data
+            with open(self.file_path, 'a') as f:
+                f.write(data)
 
 
 def main(args=None):

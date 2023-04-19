@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'robot_teleop = mi_robot_15.robot_teleop:main',
-            'robot_interface = mi_robot_15.robot_interface:main'
+            'robot_interface = mi_robot_15.robot_interface:main',
+            'robot_player = mi_robot_15.robot_player:main'
         ],
     },
 )
