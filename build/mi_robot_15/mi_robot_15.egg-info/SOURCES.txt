@@ -9,6 +9,7 @@ setup.py
 ../../build/mi_robot_15/mi_robot_15.egg-info/top_level.txt
 ../../build/mi_robot_15/mi_robot_15.egg-info/zip-safe
 mi_robot_15/__init__.py
+mi_robot_15/robot_interface.py
 mi_robot_15/robot_teleop.py
 resource/mi_robot_15
 test/test_copyright.py

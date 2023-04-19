@@ -11,7 +11,7 @@ class RobotTeleop(Node):
 	# Inicializar la superclase Nodo de la cual hereda con el nombre requerido
         super().__init__('robot_teleop')
         # Asignar a los atributos de velocidad los parámetros ingresados
-        self.linear = float(input("Por favor ingrese la velocidad lineal (en cm/s - max10): "))
+        self.linear = float(input("Por favor ingrese la velocidad lineal (en cm/s - max35): "))
         self.angular = float(input("Por favor ingrese la velocidad angular (en deg/s - max45): "))
         # Publicar en el tópico robot_cmdVel el mensaje tipo Twist
         self.publisher_ = self.create_publisher(Twist,'robot_cmdVel', 10)

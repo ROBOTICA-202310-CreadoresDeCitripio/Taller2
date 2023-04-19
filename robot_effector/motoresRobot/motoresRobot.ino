@@ -5,12 +5,12 @@ float velLineal;
 float velAngular;
 
 // Motor A
-int enA = 52;
+int enA = 2;
 int in1 = 50;
 int in2 = 48;
  
 // Motor B
-int enB = 22;
+int enB = 3;
 int in3 = 24;
 int in4 = 26;
 
@@ -64,8 +64,8 @@ void loop()
 
 void adelante(float velocidadLineal)
 {
-  // Calcular la velocidad respecto al máximo (12cm/s)
-  int activacion = int(abs(255*(velocidadLineal/12)));
+  // Calcular la velocidad respecto al máximo (35cm/s)
+  int activacion = int(abs(255*(velocidadLineal/35)));
 
   // Velocidad del Motor A y B
   analogWrite(enA, activacion);
@@ -82,8 +82,8 @@ void adelante(float velocidadLineal)
 
 void atras(float velocidadLineal)
 {
-  // Calcular la velocidad respecto al máximo (12cm/s)
-  int activacion = int(abs(255*(velocidadLineal/12)));
+  // Calcular la velocidad respecto al máximo (35cm/s)
+  int activacion = int(abs(255*(velocidadLineal/35)));
 
   // Velocidad del Motor A y B
   analogWrite(enA, activacion);
@@ -100,8 +100,8 @@ void atras(float velocidadLineal)
 
 void izquierda(float velocidadAngular)
 {
-  // Calcular la velocidad respecto al máximo (45deg/s)
-  int activacion = int(abs(255*(velocidadAngular/45)));
+  // Calcular la velocidad respecto al máximo (50deg/s)
+  int activacion = int(abs(255*(velocidadAngular/50)));
 
   // Velocidad del Motor A y B
   analogWrite(enA, activacion);
@@ -118,8 +118,8 @@ void izquierda(float velocidadAngular)
 
 void derecha(float velocidadAngular)
 {
-  // Calcular la velocidad respecto al máximo (45deg/s)
-  int activacion = int(abs(255*(velocidadAngular/45)));
+  // Calcular la velocidad respecto al máximo (50deg/s)
+  int activacion = int(abs(255*(velocidadAngular/50)));
 
   // Velocidad del Motor A y B
   analogWrite(enA, 0);
@@ -140,7 +140,7 @@ void quieto()
   analogWrite(enA, 0);
   analogWrite(enB, 0);
 
-  // Motor A gira adelante
+  // Motor A gira adelant0e
   digitalWrite(in1, LOW);
   digitalWrite(in2, LOW);
 
